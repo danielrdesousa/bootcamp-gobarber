@@ -22,24 +22,21 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
   },
-  plugins: [
-    'react',
-    '@typescript-eslint',
-    'prettier'
-  ],
+  plugins: ['react', '@typescript-eslint', 'prettier'],
   rules: {
     'prettier/prettier': 'error',
+    'class-methods-use-this': 'off',
     'import/extensions': [
       'error',
       'ignorePackages',
       {
-        'ts': 'never'
-      }
-    ]
+        ts: 'never',
+      },
+    ],
   },
   settings: {
     'import/resolver': {
-      'typescript': {}
-    }
-  }
+      typescript: {},
+    },
+  },
 };
