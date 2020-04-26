@@ -26,6 +26,13 @@ module.exports = {
   rules: {
     'prettier/prettier': 'error',
     'class-methods-use-this': 'off',
+    'no-underscore-dangle': 'off',
+    '@typecript-eslint/no-unused-vars': [
+      'error',
+      {
+        argsIgnorePattern: '_',
+      },
+    ],
     'import/extensions': [
       'error',
       'ignorePackages',
