@@ -1,3 +1,7 @@
 /backend/node_modules
 /backend/tmp/*
 !backend/temp/.gitkeep
+
+/frontend/node_modules
+
+/appgobarber/node_modules
